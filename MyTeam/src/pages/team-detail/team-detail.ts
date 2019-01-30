@@ -1,32 +1,24 @@
-import { TeamListPage } from './../team-list/team-list';
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
-
 /**
- * Generated class for the HomePage page.
+ * Generated class for the TeamDetailPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
 
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html',
+  selector: 'page-team-detail',
+  templateUrl: 'team-detail.html',
 })
-export class HomePage {
+export class TeamDetailPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad HomePage');
-  }
-
-  TeamList(pictureName:string){
-    this.navCtrl.push(TeamListPage,
-      {picture:pictureName}
-      );
+    console.log('ionViewDidLoad TeamDetailPage');
   }
 
 }
